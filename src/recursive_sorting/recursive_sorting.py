@@ -1,5 +1,9 @@
 # TO-DO: complete the help function below to merge 2 sorted arrays
 
+#------------------
+#think of way to solve it with the smallest problem
+
+
 # Merge sort
 # 1, 5, 6, 2, 10, 3, 9, 4,
 # # divide in half until you have arrays of 1
@@ -29,7 +33,17 @@ def merge( arrA, arrB ):
     elements = len( arrA ) + len( arrB )
     merged_arr = [0] * elements
     # TO-DO
-    i = 0
+    # given two arrays
+    #combine into a sorted array
+    #do this by ....
+    #compare the first element of each
+    #add the smallest to the merged array
+    #iterate the pointer for the smaller value
+    #if one pointer reachers the end of it's array
+    # push all remaining values in the other array to end of merged
+
+
+    
     left = 0
     right = 0
 
@@ -59,6 +73,15 @@ def merge( arrA, arrB ):
 # TO-DO: implement the Merge Sort function below USING RECURSION
 def merge_sort( arr ):
     # TO-DO
+    #Base case: arr length 0 or 1
+
+
+    # Otherwise:
+    #find middle of array with //2
+    # divide to left and right
+    # do merge sort on left and right
+    # put it back together by merging left and right
+
     pivot = int(len(arr)/2) #This is the pivot
     if len(arr) > 1:
         # recursively call merge_sort() on LHS
